@@ -1,0 +1,37 @@
+@import url(./button.css); /*Los import van al inicio del documento*/
+@import url(./header.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --fontBase: 'Poppins', sans-serif;
+    --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    --purple: #310A90;
+    --green: #42E2B8;
+    --white: white;
+    --headline1: bold 95px / 153.71px var(var(--fontBase));
+    --headline2: bold 59px / 95px var(var(--fontBase));
+    --headline3: bold 48px / 77px var(var(--fontBase));
+    --headline4: bold 34px / 55px var(var(--fontBase));
+    --headline5: bold 24px / 38px var(var(--fontBase));
+    --body1: 16px / 25px var(var(--fontBase));
+    --body2: 14px / 22px var(var(--fontBase));
+    --button: bold 14px/22px var(var(--fontBase));
+    --caption: 12px/19px var(var(--fontBase));
+}
+body {
+    background: var(--gradient);
+    min-block-size: 100vh;
+    font: var(--body1);
+    color: var(--green);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
