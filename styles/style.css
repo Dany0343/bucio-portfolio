@@ -1,6 +1,8 @@
 @import url(./button.css); /*Los import van al inicio del documento*/
 @import url(./header.css);
 @import url(./button-icon.css);
+@import url(./hero.css);
+@import url(./wrapper.css);
 * {
     margin: 0;
     padding: 0;
@@ -16,21 +18,21 @@ html {
     --purple: #310A90;
     --green: #42E2B8;
     --white: white;
-    --headline1: bold 95px / 153.71px var(var(--fontBase));
-    --headline2: bold 59px / 95px var(var(--fontBase));
-    --headline3: bold 48px / 77px var(var(--fontBase));
-    --headline4: bold 34px / 55px var(var(--fontBase));
-    --headline5: bold 24px / 38px var(var(--fontBase));
-    --body1: 16px / 25px var(var(--fontBase));
-    --body2: 14px / 22px var(var(--fontBase));
-    --button: bold 14px/22px var(var(--fontBase));
-    --caption: 12px/19px var(var(--fontBase));
+    --headline1: bold 95px / 153.71px var(--fontBase);
+    --headline2: bold 59px / 95px var(--fontBase);
+    --headline3: bold 48px / 77px var(--fontBase);
+    --headline4: bold 34px / 55px var(--fontBase);
+    --headline5: bold 24px / 38px var(--fontBase);
+    --body1: 16px / 25px var(--fontBase);
+    --body2: 14px / 22px var(--fontBase);
+    --button: bold 14px/22px var(--fontBase);
+    --caption: 12px/19px var(--fontBase);
 }
 body {
     background: var(--gradient);
     min-block-size: 100vh;
     font: var(--body1);
-    color: var(--green);
+    color: var(--purple);
 }
 .header {
     display: flex;

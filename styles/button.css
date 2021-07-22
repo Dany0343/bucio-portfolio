@@ -9,6 +9,8 @@
     border-radius: 4px;
     text-transform: uppercase; /*Función que pone todo el texto en mayusculas*/
     border: none;
+    text-decoration: none;
+    text-align: center;
 }
 .button--secondary {
     background: unset;  /*Sin ninguno*/
