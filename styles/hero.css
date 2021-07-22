@@ -1,14 +1,20 @@
 .hero {
     padding-block-start: 16px;
+    width: 100%;
+}
+.pic-container {
+    display: flex;
+    justify-content: center;
 }
 .hero-pic {
-    margin: 0 auto;
-    width: 330px;
-    height: 330px;
+    inline-size: 290px;
+    block-size: 290px;
     background-image: url('../assets/oscarito.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 16px;
+    min-width: 290px;
 }
 
 
@@ -26,4 +32,26 @@
 }
 .hero-social {
     padding-block-end: 24px;
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        display: flex;
+        gap: 32px;
+    }
+    .hero-description {
+        order: 1;
+        max-inline-size: 450px;
+    } 
+    .pic-container {
+        order: 2;
+        flex: 1; /*Holy shit que perro trucazo, investigar*/
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-pic {
+        inline-size: 500px;
+        block-size: 504px;
+    }
 }
