@@ -1,0 +1,7 @@
+.wrapper {
+    max-inline-size: 1152px;
+    min-inline-size: 320px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    margin: auto;
+}

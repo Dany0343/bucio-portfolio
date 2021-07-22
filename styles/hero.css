@@ -2,8 +2,16 @@
     padding-block-start: 16px;
 }
 .hero-pic {
-    text-align: center;
+    margin: 0 auto;
+    width: 330px;
+    height: 330px;
+    background-image: url('../assets/oscarito.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+
 .hero-description {
     display: flex;
     flex-direction: column;
