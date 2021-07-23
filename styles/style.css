@@ -4,6 +4,7 @@
 @import url(./hero.css);
 @import url(./wrapper.css);
 @import url(./menu.css);
+@import url(./about.css);
 * {
     margin: 0;
     padding: 0;
