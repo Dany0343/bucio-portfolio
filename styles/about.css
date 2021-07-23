@@ -16,12 +16,13 @@
     line-height: 40px;
     padding-block-end: 24px;
 }
-.about-logo {
+.about__logo {
     background-image: url('../assets/icons/icons-down.svg');
     inline-size: 80px;
     block-size: 80px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (min-width: 768px) {

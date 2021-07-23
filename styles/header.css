@@ -5,6 +5,6 @@
     block-size: 80px;
     width: 100%;
     position: sticky;  /*Para que el menu nos persiga*/
-    top: 0; /*Parte del sticky*/
+    top: 0px; /*Parte del sticky*/
     backdrop-filter: blur(10px); /*Para que tenga un efecto borroso el header*/
 }
