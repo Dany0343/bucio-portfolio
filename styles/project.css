@@ -8,19 +8,6 @@
     flex-direction: column;
     gap: 16px;
 }
-.project__description--link {
-    background: var(--purple);
-    align-self: flex-start;  /*Trucazo para hacerlo chiquito*/
-    text-decoration: none;
-    color: var(--white);
-    font: var(--headline5);
-    padding-block-start: 4px;
-    padding-block-end: 4px;
-    padding-inline-start: 8px;
-    padding-inline-end: 8px;
-    /* margin-inline-start: 4px; */
-    box-shadow: -4px 4px 0 var(--white);
-}
 .project__pic img{
     max-inline-size: 100%; /*Para que no suban de tamaño mas alla de su contenedor*/
     /* block-size: auto; */ /*Lo mismo de arriba pero para la altura. Super útil*/
@@ -32,7 +19,7 @@
         padding-block-start: 80px;
         padding-block-end: 80px;
     }
-    .project__description--link {
+    .title {
         font: var(--headline4);
     }
     .project:nth-child(odd) .project__pic{

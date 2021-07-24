@@ -7,6 +7,10 @@
 @import url(./about.css);
 @import url(./testimony.css);
 @import url(./project.css);
+@import url(./social.css);
+@import url(./footer.css);
+@import url(./form.css);
+@import url(./title.css);
 * {
     margin: 0;
     padding: 0;

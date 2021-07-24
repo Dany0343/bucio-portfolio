@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <div class="wrapper">
         <header class="header">
             <img src="./assets/logo.png" width="69" height="20" alt="Logo de Oscar Bucio">
-            <nav class="menu">
+            <nav aria-label="main-navigation" class="menu">
                 <ul>
                     <li>
                         <a class="menu__list--first" href="#main">Hola</a>
@@ -29,7 +29,7 @@
             <button class="button">Curriculum</button>
         </header>
 
-        <section class="hero" id="main">
+        <section aria-label="main" class="hero" id="main">
             <div class="pic-container">
                 <div class="hero-pic" ></div>
             </div>
@@ -41,7 +41,7 @@
                 <p>Estudiante de Ingeniería en Sistemas Computacionales en la Escuela Superior de Computo del IPN,
                     apasionado por Python, Javascript, los datos y la Web.
                 </p>
-                <div class="hero-social">
+                <div class="social">
                     <a class="button-icon" href="tel:5586907039"><img src="./assets/icons/icon-phone.svg" alt="Icono de un telefono"></a>
                     <a class="button-icon" href="mailto:oscarbucio2001@gmail.com"><img src="./assets/icons/icon-important_mail.svg" alt="Icono de mail"></a>
                     <a class="button-icon" href="https://www.instagram.com/analog.js/"><img src="./assets/icons/icon-instagram.svg" alt="Icono de Instagram"></a>
@@ -61,7 +61,7 @@
                     <img src="./assets/project1.png" alt="">
                 </div>
                 <div class="project__description">
-                    <a target="_blank" href="" class="project__description--link">oscarbucio.dev</a>
+                    <a target="_blank" href="" class="title">oscarbucio.dev</a>
                     <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
                         tus habilidades como desarrollador Front-End.</p>
                     <a target="_blank" href="#" class="button button--secondary">Ver codigo</a>
@@ -80,7 +80,7 @@
                     <img src="./assets/project2.png" alt="">
                 </div>
                 <div class="project__description">
-                    <a target="_blank" href="" class="project__description--link">oscarbucio.dev</a>
+                    <a target="_blank" href="" class="title">oscarbucio.dev</a>
                     <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p>
                     <a target="_blank" href="#" class="button button--secondary">Ver codigo</a>
                     <a target="_blank" href="#" class="button">Ver proyecto</a>
@@ -98,7 +98,7 @@
                     <img src="./assets/project3.png" alt="">
                 </div>
                 <div class="project__description">
-                    <a target="_blank" href="" class="project__description--link">oscarbucio.dev</a>
+                    <a target="_blank" href="" class="title">oscarbucio.dev</a>
                     <p>Películas y series ilimitadas y mucho más.
                         Disfruta donde quieras. Cancela cuando quieras.</p>
                     <a target="_blank" href="#" class="button button--secondary">Ver codigo</a>
@@ -112,6 +112,44 @@
                 <p>OSCAR BUCIO / oscarbucio.dev</p>
             </div>
         </section>
+
+        <form action="" method="POST" class="form">
+            <h2 class="title">Hablemos</h2>
+            <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+            <label for="form-name">
+                Nombre completo
+                <input required name="" id="form-name" type="text" placeholder="Juan">
+            </label>
+            
+            <label for="form-email">
+                Correo electrónico
+                <input required name="email" id="form-email" type="email" placeholder="helloworld@email.com">
+            </label>
+            
+            <label for="form-name">
+                Mensaje
+                <textarea required name="message" id="form-message" placeholder="Mensaje..." cols="30" rows="10"></textarea>
+            </label>
+        
+            <button class="button" type="submit">Enviar mensaje</button>
+        </form>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <img src="./assets/logo.png" width="69" height="20" alt="Logo de Oscar Bucio" class="footer__logo">
+                <div class="social">
+                    <a class="button-icon" href="tel:5586907039"><img src="./assets/icons/icon-phone.svg" alt="Icono de un telefono"></a>
+                    <a class="button-icon" href="mailto:oscarbucio2001@gmail.com"><img src="./assets/icons/icon-important_mail.svg" alt="Icono de mail"></a>
+                    <a class="button-icon" href="https://www.instagram.com/analog.js/"><img src="./assets/icons/icon-instagram.svg" alt="Icono de Instagram"></a>
+                    <a class="button-icon" href="https://twitter.com/Bucio0301"><img src="./assets/icons/icon-twitter_squared.svg" alt="Icono de Twitter"></a>
+                </div>
+                <div class="footer__copyright">
+                    <p>Hecho con 🧡 por Oscar Bucio</p>
+                    <p>Copyright 2021 - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
     </div>
+    
 </body>
 </html>
