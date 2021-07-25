@@ -7,28 +7,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#F7931A" />
     <title>Portfolio</title>
 </head>
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__content">
+                <div>
+                    <img src="./assets/logotemporal.png"  alt="Logo de Oscar Bucio">
+                </div>
+                    <nav aria-label="main-navigation" class="menu">
+                        <ul>
+                            <li>
+                                <a class="menu__list--first" href="#main">Hola</a>
+                            </li>
+                            <li>
+                                <a href="#project">Proyectos</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Hablemos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="button">Curriculum</button>
+            </div>
+        </div>
+    </header>
     <div class="wrapper">
-        <header class="header">
-            <img src="./assets/logo.png" width="69" height="20" alt="Logo de Oscar Bucio">
-            <nav aria-label="main-navigation" class="menu">
-                <ul>
-                    <li>
-                        <a class="menu__list--first" href="#main">Hola</a>
-                    </li>
-                    <li>
-                        <a href="#project">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Hablemos</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="button">Curriculum</button>
-        </header>
-
         <section aria-label="main" class="hero" id="main">
             <div class="pic-container">
                 <div class="hero-pic" ></div>
@@ -50,12 +56,14 @@
                 <a href="https:www.linkedin.com" class="button">Descargar Curriculum</a>
             </div>
         </section>
+
         <div class="about">
             <h2>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles</h2>
             <p>Aquí hay algunos que me gustaría compartir</p>
-            <a class="about__logo" href=""><span></span></a>
+            <span class="about__logo"></span>
         </div>
-        <section>
+
+        <section id="project">
             <div class="project">
                 <div class="project__pic">
                     <img src="./assets/project1.png" alt="">
@@ -114,29 +122,33 @@
         </section>
 
         <form action="" method="POST" class="form">
-            <h2 class="title">Hablemos</h2>
-            <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
-            <label for="form-name">
-                Nombre completo
-                <input required name="" id="form-name" type="text" placeholder="Juan">
-            </label>
+            <div class="form__content">
+                <h2 class="title">Hablemos</h2>
+                <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+                <label for="form-name">
+                    Nombre completo
+                    <input required name="" id="form-name" type="text" placeholder="Juan">
+                </label>
+                
+                <label for="form-email">
+                    Correo electrónico
+                    <input required name="email" id="form-email" type="email" placeholder="helloworld@email.com">
+                </label>
+                
+                <label for="form-name">
+                    Mensaje
+                    <textarea required name="message" id="form-message" placeholder="Mensaje..." cols="30" rows="10"></textarea>
+                </label>
             
-            <label for="form-email">
-                Correo electrónico
-                <input required name="email" id="form-email" type="email" placeholder="helloworld@email.com">
-            </label>
-            
-            <label for="form-name">
-                Mensaje
-                <textarea required name="message" id="form-message" placeholder="Mensaje..." cols="30" rows="10"></textarea>
-            </label>
-        
-            <button class="button" type="submit">Enviar mensaje</button>
+                <button class="button" type="submit">Enviar mensaje</button>
+            </div>
         </form>
 
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="footer__content">
-                <img src="./assets/logo.png" width="69" height="20" alt="Logo de Oscar Bucio" class="footer__logo">
+                <div class="footer__logo">
+                    <img src="./assets/logotemporal.png"  alt="Logo de Oscar Bucio">
+                </div>
                 <div class="social">
                     <a class="button-icon" href="tel:5586907039"><img src="./assets/icons/icon-phone.svg" alt="Icono de un telefono"></a>
                     <a class="button-icon" href="mailto:oscarbucio2001@gmail.com"><img src="./assets/icons/icon-important_mail.svg" alt="Icono de mail"></a>

@@ -1,12 +1,15 @@
-.form {
+.form__content {
     display: flex;
     flex-direction: column;
     gap: 16px;
     max-inline-size: 540px;
     margin: auto;
+    
+}
+.form {
     margin-block-end: 80px;
 }
-.form p {
+.form__content p {
     color: var(--white);
     font: var(--body1);
     text-align: center;

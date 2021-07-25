@@ -6,7 +6,9 @@
     justify-content: center;
     padding-block-end: 15px;
 }
-.footer__logo {
+.footer__logo img{
+    max-inline-size: 100%; 
+    block-size: auto; 
     display: none;
 }
 .footer__copyright p{
@@ -18,8 +20,10 @@
         justify-content: space-between;
         align-items: center;
     }
-    .footer__logo {
+    .footer__logo img{
         display: block;
+        block-size: 60px;
+        inline-size: 60px;
     }
     .footer__content .social {
         order: 3;

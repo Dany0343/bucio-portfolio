@@ -1,10 +1,20 @@
 .header {
+    position: sticky;  /*Para que el menu nos persiga*/
+    top: 0px; /*Parte del sticky*/
+    backdrop-filter: blur(10px); /*Para que tenga un efecto borroso el header*/
+}
+.header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     block-size: 80px;
     width: 100%;
-    position: sticky;  /*Para que el menu nos persiga*/
-    top: 0px; /*Parte del sticky*/
-    backdrop-filter: blur(10px); /*Para que tenga un efecto borroso el header*/
+}
+.header__content div {
+    block-size: 60px;
+    inline-size: 60px;
+}
+.header__content img {
+    max-inline-size: 100%; 
+    block-size: auto; 
 }
